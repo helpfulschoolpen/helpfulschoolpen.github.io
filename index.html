@@ -7,6 +7,14 @@
   font-size: 16px;
   color: #E4C3D1;
   }
+    .home{
+        display:flex;
+    }
+    .kundenmeinungen{
+        display:none;
+    }
+    .bestellen{
+        display:none;
    
         
   body {
@@ -79,6 +87,12 @@ Hier bestellen
             <script>
                 var confirm="Diese Website verwendet Cookies🍪. "
                alert(confirm)
+                function showHome(){
+                }
+                function showKundenmeinungen(){
+                    var HomeSection=document.querySelector(".home");
+                    HomeSection.style.display="none";
+                }
             </script>
     
 </body>
