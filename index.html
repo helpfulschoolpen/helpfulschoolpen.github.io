@@ -50,7 +50,7 @@
             <div class="buttoncontainer">
             <button onclick="showHome()">Home</button>
             <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
-            <button>Bestellen</button>
+            <button onclick="showBestellen()">Bestellen</button>
             </div>
         </div>
        
@@ -93,6 +93,12 @@ Hier bestellen
 
             <script>
             function showHome(){
+               var HomeSection=document.querySelector(".home");
+                    HomeSection.style.display="flex";
+                    var KundenmeinungenSection=document.querySelector(".kundenmeinungen");
+                    KundenmeinungenSection.style.display="none";
+                    var BestellenSection=document.querySelector(".bestellen");
+                    BestellenSection.style.display="none"; 
              }
                 function showKundenmeinungen(){
                     var HomeSection=document.querySelector(".home");
@@ -102,7 +108,14 @@ Hier bestellen
                     var BestellenSection=document.querySelector(".bestellen");
                     BestellenSection.style.display="none";
                 }
-              
+              function showBestellen(){
+                var HomeSection=document.querySelector(".home");
+                    HomeSection.style.display="none";
+                    var KundenmeinungenSection=document.querySelector(".kundenmeinungen");
+                    KundenmeinungenSection.style.display="none";
+                    var BestellenSection=document.querySelector(".bestellen");
+                    BestellenSection.style.display="flex";  
+              }
               
             </script>
     
