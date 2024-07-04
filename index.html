@@ -48,8 +48,8 @@
     <body>
         <div class= "navi">
             <div class="buttoncontainer">
-            <button onclick="zeigeMeldung()">Home</button>
-            <button>Kundenmeinungen</button>
+            <button onclick="showHome()">Home</button>
+            <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
             <button>Bestellen</button>
             </div>
         </div>
@@ -92,9 +92,12 @@ Hier bestellen
         
 
             <script>
-            function zeigeMeldung(){
-                alert("Hiii");
-            }
+            function showHome(){
+             }
+                function showKundenmeinungen(){
+                    var HomeSection=document.querySelector(".home");
+                    HomeSection.style.display="none";
+                }
               
               
             </script>
