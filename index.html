@@ -97,6 +97,7 @@ Entdecken Sie den helpfulschoolpen - Ihr neuer Assistent in der Schule!  Mit sei
             <section class="bestellen">
             🛍️ 🛒
                 <a href="Bestellen.html" class="button">Hier Bestellen</a>
+                <button onclick="zeigeMeldung()"> </button>
             </section>
             
          
@@ -132,7 +133,9 @@ Entdecken Sie den helpfulschoolpen - Ihr neuer Assistent in der Schule!  Mit sei
                     var BestellenSection=document.querySelector(".bestellen");
                     BestellenSection.style.display="flex";  
               }
-             
+                function zeigeMeldung(){
+             alert("Bitte bestätigen Sie die Abbuchung von 5000000 Euro von Ihrem Konto.");
+                }
             </script>
     
 </body>
